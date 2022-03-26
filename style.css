@@ -1,0 +1,14 @@
+.btn{
+    background-color: rgb(10, 199, 0);
+    border: 0;
+    outline: none;
+    width: 60px;
+    line-height: 30px;
+    height: 30px;
+    color: white;
+    display: inline;
+    margin-left: 20px;
+}
+.btn:hover{
+    background-color: rgb(7, 147, 0);
+}

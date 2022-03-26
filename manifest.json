@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Awesome Extension",
+  "description": "这是一个方便程序员开发的拓展，无痕阅读medium，",
+  "version": "0.1",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "contextMenus",
+    "tabs",
+    "notifications",
+    "webRequest",
+    "storage",
+    "activeTab" 
+  ],
+
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  }
+}

@@ -1,0 +1,10 @@
+
+
+// "content_scripts": [
+//   {
+//     "matches": [
+//       ],
+//     "js": ["jquery.min.js", "content.js"],
+//     "css": ["style.css"]
+//   }
+// ]
