@@ -8,3 +8,11 @@
 //     "css": ["style.css"]
 //   }
 // ]
+
+
+    "webRequest",
+    "storage",s
+
+
+manifest文件属性
+     "web_accessible_resources": [ "/icons/*", "/js/*", "/page/*", "/resouce/*" ]

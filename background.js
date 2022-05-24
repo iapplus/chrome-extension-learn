@@ -33,13 +33,14 @@ chrome.action.onClicked.addListener(function (tab) {
 chrome.contextMenus.onClicked.addListener(onClickHandler);
 
 chrome.contextMenus.create({
-  title: "无痕模式打开当前页",
+  title: "无痕模式打开",
   contexts: ["page"],
   id: openId,
 });
 
 chrome.contextMenus.create({
-  title: "无痕模式打开当前页(关闭当前页)",
+  title: "无痕模式打开(同时关闭当前页)",
   contexts: ["page"],
   id: openAndCloseId,
 });
+
