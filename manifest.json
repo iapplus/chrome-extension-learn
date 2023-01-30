@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "程序员效率工具包",
-  "description": "这是一个方便程序员专属拓展，无痕阅读medium，快速打开localhost不同端口的web",
+  "name": "阿里巴巴客户导出工具",
+  "description": "导出客户",
   "icons": {
     "16": "icon.png",
     "48": "icon.png",
@@ -13,7 +13,8 @@
   },
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
+      "run-at": "document_end",
+      "matches": ["https://alicrm.alibaba.com/*"],
       "js": ["content.js"]
     },
     {
@@ -22,17 +23,43 @@
     },
     {
       "matches": ["https://www.baidu.com/*"],
-      "js": ["html2canvas.min.js","jquery.min.js", "baidu.js"],
+      "js": [
+        "html2canvas.min.js",
+        "jquery.min.js",
+        "baidu.js"
+      ],
       "css": ["style.css"]
+    },
+    {
+      "matches": ["https://www.amazon.com/*"],
+      "js": [
+        "amazon.js"
+      ]
     }
   ],
-  "permissions": ["contextMenus", "tabs", "notifications", "activeTab"],
+  "permissions": [
+    "contextMenus",
+    "tabs",
+    "notifications",
+    "activeTab",
+    "alarms",
+    "storage",
+    "scripting",
+    "webRequest",
+    "cookies"
+  ],
   "action": {
     "default_popup": "popup.html",
     "default_icon": "icon.png"
   },
-  "web_accessible_resources": [{
-    "resources": ["html2canvas.min.js"],
-    "matches": ["<all_urls>"]
-  }]
+  "web_accessible_resources": [
+    {
+      "resources": ["html2canvas.min.js", "test.js"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "host_permissions": ["http://www.blogger.com/", "*://*/*"],
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  }
 }

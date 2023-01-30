@@ -1,84 +1,62 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title></title>
-    <style type="text/css">
-      * {
-        padding: 0;
-        margin: 0;
-        user-select: none;
-      }
-      #main {
-        width: 300px;
-        height: 647.2px;
-        padding: 2rem;
-        background-color: rgb(59, 59, 59);
-      }
-      ul li {
-        list-style: none;
-        font-size: 1.4rem;
-        line-height: 2rem;
-      }
-      ul li a {
-        display: block;
-        cursor: pointer;
-        text-decoration: none;
-        color: rgb(223, 223, 223);
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-          sans-serif;
-        font-size: 1.4rem;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="main">
-      <div style="color: rgb(15, 245, 138)">常用端口</div>
-      <ul style="display: flex; justify-content: space-around">
-        <li><a target="_blank" href="localhost">localhost</a></li>
-        <li><a target="_blank" href="http://127.0.0.1">:80</a></li>
-        <li><a target="_blank" href="http://127.0.0.1:3000">:3000</a></li>
-        <li><a target="_blank" href="http://127.0.0.1:8080">:8080</a></li>
-        <li><a target="_blank" href="http://127.0.0.1:8081">:8081</a></li>
-      </ul>
-      <hr />
-      <div style="color: rgb(225, 95, 95)">常用网站</div>
-      <ul style="display: flex; justify-content: space-around">
-        <li><a target="_blank" href="https://www.google.com">google</a></li>
-        <li><a target="_blank" href="www.segmentfault.com">segmentfault</a></li>
-      </ul>
-      <hr />
-      <div style="color: rgb(225, 95, 95)">在线工具</div>
 
-      <ul style="display: flex; justify-content: space-around">
-        <li><a target="_blank" href="https://regex101.com/">正则表达式</a></li>
-        <li><a target="_blank" href="https://httpbin.org/">httpbin</a></li>
-        <li><a target="_blank" href="http://jsbin.com/">jsbin</a></li>
-        <li><a target="_blank" href="https://codepen.io/">codepen</a></li>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title></title>
+  <style type="text/css">
+    * {
+      padding: 0;
+      margin: 0;
+      user-select: none;
+    }
+
+    #main {
+      width: 300px;
+      height: 647.2px;
+      padding: 2rem;
+      background-color: #E67A00;
+    }
+
+    ul li {
+      list-style: none;
+      font-size: 1.4rem;
+      line-height: 2rem;
+    }
+
+    ul li a {
+      display: block;
+      cursor: pointer;
+      text-decoration: none;
+      color: rgb(223, 223, 223);
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      font-size: 1.4rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="main">
+    <button id="changeColor" class="color-btn">点击</button>
+    <h1 id="abcdef">加载中</h1>
+    <button id="exportExcel">
+      导出Excel
+    </button>
+    <hr>
+    <div style="margin-top: 5rem;">
+      亚马逊排名
+      <input id="keyword" placeholder="请输入搜索关键字">
+      <input id="asin" value="" placeholder="请输入ASIN">
+      <input id="search" type="button" value="开始获取">
+      <input id="requestAmazonRank" type="button" value="获取排名结果">
+      <ul id="rankList">
+
       </ul>
-      <div style="color: rgb(225, 95, 95)">国外网站</div>
-      <ul style="display: flex; justify-content: space-around">
-        <li><a target="_blank" href="https://regex101.com/">upsplash</a></li>
-        <li><a target="_blank" href="https://httpbin.org/">youtube</a></li>
-        <li><a target="_blank" href="http://jsbin.com/">dribbble</a></li>
-        <li><a target="_blank" href="https://codepen.io/">codepen</a></li>
-      </ul>
-      <div style="color: rgb(225, 95, 95)">破解软件下载专区</div>
-      <ul>
-        <li><a target="_blank" href="https://cmacked.com/">https://cmacked.com/</a></li>
-        <li>
-          <a target="_blank" href="https://www.torrentmac.net">torrentmac.net</a>
-        </li>
-        <li>
-          <a target="_blank" href="http://www.appstorrent.ru">appstorrent.ru</a>
-        </li>
-      </ul>
-      <div style="color: rgb(225, 95, 95)">文档</div>
-      <ul>
-        <li><a target="_blank" href="https://www.markdownguide.org/basic-syntax/">Markdown文档</a></li>
-      </ul>
-      
     </div>
-  </body>
+  </div>
+  <script src="popup.js" defer></script>
+</body>
+
 </html>
