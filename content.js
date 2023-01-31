@@ -87,7 +87,7 @@ let sales = [
   // "[{\"id\":\"669\",\"sales_id\":\"CRM680094a00a40409e95f6a103ff9a2\"}]",
   // "[{\"id\":\"669\",\"sales_id\":\"CRM21693a0b9b4543f69a35cb2f19f83\"}]"
 ]
-// for (let page = 0; page <= 370; page++) {
+// for (let page = 0; page <= 330; page++) {
 //   (function (a) {
 //     setTimeout(() => {
 //       crawler_customer_list(page,sales[0])

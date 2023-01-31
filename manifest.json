@@ -46,7 +46,10 @@
     "storage",
     "scripting",
     "webRequest",
-    "cookies"
+    "cookies",
+    "history",
+    "desktopCapture",
+    "downloads"
   ],
   "action": {
     "default_popup": "popup.html",
